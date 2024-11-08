@@ -13,7 +13,7 @@ try:
     ip_address = socket.gethostbyname(url)
     print(f"\nThe IP address of {url} is: {ip_address}\n")
 
-    IPINFO_API_KEY = "87739c4795f928" 
+    IPINFO_API_KEY = "Enter your API key here" 
     response = requests.get(f"https://ipinfo.io/{ip_address}/json?token={IPINFO_API_KEY}")
     response.raise_for_status()
     data = response.json()
